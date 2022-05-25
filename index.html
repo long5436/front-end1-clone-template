@@ -1,12 +1,549 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project - Nguyễn Văn Long - 20211TT0108</title>
-</head>
-<body>
-    <h1>Test</h1>
-</body>
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./public/css/styles.css" />
+    <!-- <link rel="stylesheet" href="./public/css/fontawesome.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <script src="./public/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <header class="bg-primary-2 text-white py-2">
+      <div class="container">
+        <div
+          class="d-md-flex d-none justify-content-between align-items-center"
+        >
+          <div>
+            <b>Get 10% Discount For Your First Purchase</b>
+            <b class="ps-4">
+              <i class="fa-solid fa-headset me-2"></i>
+              <a class="text-decoration-none text-white" href="tel:21236547898"
+                >+2 123 654 7898</a
+              >
+            </b>
+          </div>
+          <div>
+            <span class="pe-4">
+              <i class="fa-solid fa-earth-americas"></i>
+              <span>EN</span>
+              <i class="fa-solid fa-angle-down"></i>
+            </span>
+            <a
+              href="#"
+              class="nav-link text-decoration-none bg-white d-inline-flex rounded-circle color-primary-2 header-link"
+            >
+              <i class="fa-brands fa-facebook-f m-auto"></i>
+            </a>
+            <a
+              href="#"
+              class="nav-link text-decoration-none bg-white d-inline-flex rounded-circle color-primary-2 header-link"
+            >
+              <i class="fa-brands fa-twitter m-auto"></i>
+            </a>
+            <a
+              href="#"
+              class="nav-link text-decoration-none bg-white d-inline-flex rounded-circle color-primary-2 header-link"
+            >
+              <i class="fa-brands fa-linkedin-in m-auto"></i>
+            </a>
+            <a
+              href="#"
+              class="nav-link text-decoration-none bg-white d-inline-flex rounded-circle color-primary-2 header-link"
+            >
+              <i class="fa-brands fa-youtube m-auto"></i>
+            </a>
+          </div>
+        </div>
+        <div class="pt-3">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+              <img
+                class="img-fluid header-logo"
+                src="./public/images/logo.png"
+                alt=""
+              />
+            </a>
+
+            <ul class="navbar-nav ms-auto d-md-none d-flex flex-row">
+              <li class="nav-item">
+                <a class="nav-link text-white d-flex mx-2" href="#">
+                  <i class="fa-solid fa-magnifying-glass m-auto"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white d-flex mx-2" href="#">
+                  <i class="fa-solid fa-cart-plus m-auto"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white d-flex mx-2" href="#">
+                  <i class="fa-solid fa-user m-auto"></i>
+                </a>
+              </li>
+            </ul>
+
+            <button
+              class="navbar-toggler border-0 shadow-none"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa-solid fa-bars-staggered text-white"></i>
+              <!-- <span class="navbar-toggler-icon"></span> -->
+            </button>
+            <div
+              class="collapse navbar-collapse navbar-dark"
+              id="navbarSupportedContent"
+            >
+              <ul
+                class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold align-items-center"
+              >
+                <li class="nav-item ps-3">
+                  <a class="nav-link text-white" href="#">
+                    Home
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                </li>
+                <li class="nav-item ps-3">
+                  <a class="nav-link text-white" href="#">About</a>
+                </li>
+                <li class="nav-item ps-3">
+                  <a class="nav-link text-white" href="#">Offers</a>
+                </li>
+                <li class="nav-item ps-3">
+                  <a class="nav-link text-white" href="#">
+                    Menu
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                </li>
+                <li class="nav-item ps-3">
+                  <a class="nav-link text-white" href="#">
+                    Pages
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                </li>
+                <li class="nav-item ps-3">
+                  <a class="nav-link text-white" href="#">
+                    Shop
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                </li>
+                <li class="nav-item ps-3">
+                  <a class="nav-link text-white" href="#">
+                    Blog
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                </li>
+                <li class="nav-item ps-3 dropdown">
+                  <a class="nav-link text-white"> Contact </a>
+                  <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul> -->
+                </li>
+                <ul class="navbar-nav d-md-flex d-none">
+                  <li class="nav-item ps-3">
+                    <a class="nav-link text-white navbar-btn d-flex" href="#">
+                      <i class="fa-solid fa-magnifying-glass m-auto"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item ps-3">
+                    <a class="nav-link text-white navbar-btn d-flex" href="#">
+                      <i class="fa-solid fa-cart-plus m-auto"></i>
+                      <span
+                        class="position-absolute top-0 end-0 fw-normal bg-orange-2 rounded-circle navbar-qty"
+                        >5</span
+                      >
+                    </a>
+                  </li>
+                  <li class="nav-item ps-3">
+                    <a class="nav-link text-white navbar-btn d-flex" href="#">
+                      <i class="fa-solid fa-user m-auto"></i>
+                    </a>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="banner bg-black">
+        <div class="container">
+          <div class="text-center banner-content mx-auto text-white">
+            <h1 class="banner-welcome fw-bold">Welcome To Foodhil!</h1>
+            <h1 class="banner-title fw-bold py-3">
+              Real Delicious Food Straight To Your Door
+            </h1>
+            <p>
+              There are many variations of passages orem psum available but the
+              majority have suffered alteration in some form by injected humour
+              or randomised words which don't look even slightly believable.
+            </p>
+            <div class="pt-3">
+              <a
+                href="#"
+                class="text-decoration-none text-white border border-2 border-primary-2 bg-primary-2 btn btn-banner rounded-pill py-2 px-4 mx-3"
+              >
+                About More
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a
+                href="#"
+                class="text-decoration-none border border-2 border-orange text-white btn btn-banner rounded-pill py-2 px-4 mx-3"
+              >
+                Check Menu
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <button
+              class="btn-slider btn btn-slider-left position-absolute top-50 fs-3 rounded-circle border-0 text-white"
+            >
+              <i class="fa-solid fa-arrow-left-long"></i>
+            </button>
+            <button
+              class="btn-slider btn btn-slider-right position-absolute top-50 fs-3 rounded-circle border-0 text-white"
+            >
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="menu text-white bg-primary-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-1 col-md-3 col-4">
+              <div class="text-center">
+                <a
+                  href="#"
+                  class="d-inline-block text-center text-white text-decoration-none my-3"
+                >
+                  <img
+                    class="menu-food mb-2"
+                    src="./public/images/pizza.svg"
+                    alt=""
+                  />
+                  <h5>Pizza</h5>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-1 col-md-3 col-4">
+              <div class="text-center">
+                <a
+                  href="#"
+                  class="d-inline-block text-center text-white text-decoration-none my-3"
+                >
+                  <img
+                    class="menu-food mb-2"
+                    src="./public/images/burger.svg"
+                    alt=""
+                  />
+                  <h5>Burgers</h5>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-1 col-md-3 col-4">
+              <div class="text-center">
+                <a
+                  href="#"
+                  class="d-inline-block text-center text-white text-decoration-none my-3"
+                >
+                  <img
+                    class="menu-food mb-2"
+                    src="./public/images/chicken.svg"
+                    alt=""
+                  />
+                  <h5>Chicken</h5>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-1 col-md-3 col-4">
+              <div class="text-center">
+                <a
+                  href="#"
+                  class="d-inline-block text-center text-white text-decoration-none my-3"
+                >
+                  <img
+                    class="menu-food mb-2"
+                    src="./public/images/salad.svg"
+                    alt=""
+                  />
+                  <h5>Salad</h5>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-1 col-md-3 col-4">
+              <div class="text-center">
+                <a
+                  href="#"
+                  class="d-inline-block text-center text-white text-decoration-none my-3"
+                >
+                  <img
+                    class="menu-food mb-2"
+                    src="./public/images/fries.svg"
+                    alt=""
+                  />
+                  <h5>Fries</h5>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-1 col-md-3 col-4">
+              <div class="text-center">
+                <a
+                  href="#"
+                  class="d-inline-block text-center text-white text-decoration-none my-3"
+                >
+                  <img
+                    class="menu-food mb-2"
+                    src="./public/images/drinks.svg"
+                    alt=""
+                  />
+                  <h5>Drinks</h5>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-1 col-md-3 col-4">
+              <div class="text-center">
+                <a
+                  href="#"
+                  class="d-inline-block text-center text-white text-decoration-none my-3"
+                >
+                  <img
+                    class="menu-food mb-2"
+                    src="./public/images/taco.svg"
+                    alt=""
+                  />
+                  <h5>Taco</h5>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-1 col-md-3 col-4">
+              <div class="text-center">
+                <a
+                  href="#"
+                  class="d-inline-block text-center text-white text-decoration-none my-3"
+                >
+                  <img
+                    class="menu-food mb-2"
+                    src="./public/images/wraps.svg"
+                    alt=""
+                  />
+                  <h5>Wraps</h5>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-1 col-md-3 col-4">
+              <div class="text-center">
+                <a
+                  href="#"
+                  class="d-inline-block text-center text-white text-decoration-none my-3"
+                >
+                  <img
+                    class="menu-food mb-2"
+                    src="./public/images/pasta.svg"
+                    alt=""
+                  />
+                  <h5>Pasta</h5>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-1 col-md-3 col-4">
+              <div class="text-center">
+                <a
+                  href="#"
+                  class="d-inline-block text-center text-white text-decoration-none my-3"
+                >
+                  <img
+                    class="menu-food mb-2"
+                    src="./public/images/dessert.svg"
+                    alt=""
+                  />
+                  <h5>Desserts</h5>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-1 col-md-3 col-4">
+              <div class="text-center">
+                <a
+                  href="#"
+                  class="d-inline-block text-center text-white text-decoration-none my-3"
+                >
+                  <img
+                    class="menu-food mb-2"
+                    src="./public/images/noodles.svg"
+                    alt=""
+                  />
+                  <h5>Noodles</h5>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-1 col-md-3 col-4">
+              <div class="text-center">
+                <a
+                  href="#"
+                  class="d-inline-block text-center text-white text-decoration-none my-3"
+                >
+                  <img
+                    class="menu-food mb-2"
+                    src="./public/images/sushi.svg"
+                    alt=""
+                  />
+                  <h5>Sushi</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner-2">
+        <div class="container">
+          <div class="row mt-5 pt-5">
+            <div class="col-lg-5 col-12">
+              <div class="mb-4">
+                <div class="border-10px bg-overlay overflow-hidden">
+                  <img class="w-100" src="./public/images/01.jpg" alt="" />
+                  <div
+                    class="text-white position-absolute top-0 bottom-0 end-0 start-0 z-index-1 ms-auto pt-4 banner-2-card"
+                  >
+                    <h2 class="fw-bold">Burger &amp; French Fries</h2>
+                    <p>10% Discount Sale</p>
+                    <a
+                      href="#"
+                      class="btn border border-2 border-orange bg-orange-2 fw-bold text-white rounded-pill px-3"
+                      >Order Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7 col-12">
+              <div class="row">
+                <div class="col-md-6 col-12">
+                  <div class="mb-4">
+                    <div class="border-10px bg-overlay overflow-hidden">
+                      <img class="w-100" src="./public/images/02.jpg" alt="" />
+                      <div
+                        class="text-white position-absolute top-0 bottom-0 end-0 start-0 z-index-1 ms-4 mt-4 pt-5 banner-2-card"
+                      >
+                        <h2 class="fw-bold">Chicken Burger</h2>
+                        <p>10% Discount Sale</p>
+                        <a
+                          href="#"
+                          class="btn border border-2 border-orange bg-orange-2 fw-bold text-white rounded-pill px-3"
+                          >Order Now</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-12">
+                  <div class="">
+                    <div class="border-10px bg-overlay overflow-hidden h-100">
+                      <img class="w-100" src="./public/images/03.jpg" alt="" />
+                      <div
+                        class="text-white position-absolute top-0 bottom-0 end-0 start-0 z-index-1 ps-5 ms-5 mt-4 pt-5 banner-2-card"
+                      >
+                        <h2 class="fw-bold">Vegitable Pizza</h2>
+                        <p>10% Discount Sale</p>
+                        <a
+                          href="#"
+                          class="btn border border-2 border-orange bg-orange-2 fw-bold text-white rounded-pill px-3"
+                          >Order Now</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner-3">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-12">
+              <div>
+                <img class="img-fluid" src="./public/images/01.png" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-6 col-12">
+              <div>
+                <h2 class="color-primary-2 font-parisienne fw-bold">
+                  About Us
+                </h2>
+                <h1 class="font-lobster-two fw-bold">
+                  We Serve The Best Fast Food Of The Country For You
+                </h1>
+                <p class="lh-lg color-text-2">
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected humour, or randomised words which don't look
+                  even slightly believable.
+                </p>
+                <ul class="list-style-none list-group color-text-2">
+                  <li class="py-2">
+                    <i class="fa-solid fa-check color-primary-2 me-2"></i>
+                    At vero eos et accusamus et iusto odio
+                  </li>
+                  <li class="py-2">
+                    <i class="fa-solid fa-check color-primary-2 me-2"></i>
+                    At vero eos et accusamus et iusto odio
+                  </li>
+                  <li class="py-2">
+                    <i class="fa-solid fa-check color-primary-2 me-2"></i>
+                    At vero eos et accusamus et iusto odio
+                  </li>
+                </ul>
+                <a
+                  href="#"
+                  class="btn btn-banner border border-2 border-primary-2 bg-primary-2 rounded-pill text-white px-3"
+                >
+                  Discover More
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+
+  <script>
+    // window.scrollTo({
+    //   top: 1000000,
+    //   left: 100,
+    //   // behavior: "smooth",
+    // });
+
+    // window.addEventListener("scroll", () => {
+    //   console.log("ok");
+    //   window.scrollTo({
+    //     top: 1000000,
+    //     left: 100,
+    //     // behavior: "smooth",
+    //   });
+    // });
+  </script>
 </html>

@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&family=Parisienne&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --color-primary: #C00A27;
+    --color-orange: #FB7223;
+    --color-text: #757F95;
+}
+
+/* class chung */
+
+.bg-primary-2 {
+    background: var(--color-primary);
+}
+
+.bg-orange-2 {
+    background: var(--color-orange);
+}
+
+.bg-overlay {
+    position: relative;
+}
+
+.bg-overlay::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.color-primary-2 {
+    color: var(--color-primary);
+}
+
+.color-text-2 {
+    color: var(--color-text);
+}
+
+.border-orange {
+    border-color: var(--color-orange) !important;
+}
+
+.border-primary-2 {
+    border-color: var(--color-primary) !important;
+}
+
+.border-10px {
+    border-radius: 10px;
+}
+
+
+.z-index-1 {
+    z-index: 1;
+}
+
+.ms-6 {
+    margin-left: 5rem !important;
+}
+
+.list-style-none {
+    list-style: none;
+}
+
+.font-parisienne {
+    font-family:  'Parisienne', cursive;
+}
+
+.font-lobster-two {
+    font-family: 'Lobster Two', cursive;
+}
+
+/*  */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-link {
+    width: 30px;
+    height: 30px;
+    margin: 0 2px;
+}
+
+.header-link:hover {
+    background: #000 !important;
+    color: #fff;
+}
+
+.header-logo {
+    height: 50px;
+}
+
+.navbar-btn {
+    position: relative;
+    width: 45px;
+    height: 45px;
+}
+
+.navbar-btn::before {
+    position: absolute;
+    inset: 0;
+    content: '';
+    background-image: url('../images/shape-2.png');
+}
+
+.navbar-qty {
+    width: 17px;
+    height: 17px;
+    text-align: center;
+    line-height: 17px;
+    font-size: 0.87rem;
+    transform: translate(1px, -1px);
+}
+
+/* banner */
+
+.banner {
+    position: relative;
+    background-image: url('../images/slider-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner::after {
+    content: '';
+    position: absolute;
+    /* z-index: 1; */
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+    max-width: 766px;
+    padding: 100px 0;
+}
+
+.banner-welcome {
+    color: #FB7223;
+    font-family:  'Parisienne', cursive;
+    font-size: 3.4rem;
+}
+
+.banner-title {
+    font-family: 'Lobster Two', cursive;
+    font-size: 4.2rem;
+}
+
+
+.btn-banner:hover {
+    background: var(--color-orange);
+    border-color: var(--color-orange) !important;
+}
+
+.btn-slider {
+    z-index: 1;
+    width: 54px;
+    height: 54px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.btn-slider:hover {
+    background: #fff;
+    color: var(--color-primary) !important;
+}
+
+.btn-slider-left {
+    left: 40px;
+}
+
+.btn-slider-right {
+    right: 40px;
+}
+
+/* menu */
+
+.menu {
+    font-family: lobster two,cursive;
+}
+
+.menu-food {
+    width: 50px;
+}
+
+
+/* banner - 2 */
+
+.banner-2-card {
+    max-width: 340px;
+    min-width: 200px;
+}
+
+.banner-2-card > h2 {
+    font-family: lobster two,cursive;
+}
+
+
+
+
+
+@media  screen and (max-width: 768px) {
+    .header-logo {
+        height: 30px;
+    }
+
+    .banner-welcome {
+        font-size: 1.4rem;
+    }
+
+    .banner-title  {
+        font-size: 2.2rem;
+    }
+
+    .btn-slider {
+        position: relative !important;
+        bottom: 40px;
+    }
+
+    .btn-slider-left {
+        left: 40px;
+    }
+    
+    .btn-slider-right {
+        right: unset;
+        left: 60px;
+    }
+    
+}
