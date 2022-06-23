@@ -1,0 +1,152 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./public/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./public/css/styles.css" />
+  <!-- <link rel="stylesheet" href="./public/css/fontawesome.css"> -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  />
+</head>
+
+<div class="features py-5">
+  <div class="container py-4">
+    <div class="text-center text-white my-5">
+      <p class="color-primary-2 font-parisienne fs-1 fw-bold mb-0">Features</p>
+      <h2 class="feature-title font-lobster-two fw-bold">Our Best Features</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-3">
+        <div class="col">
+          <div class="card feature-card py-4 px-4 border-0 border-8px">
+            <img
+              src="./public/images/premium.svg"
+              class="card-img-top feature-card-img mt-2"
+              alt="..."
+            />
+            <div class="card-body text-start px-0 pb-0">
+              <h4 class="card-title font-lobster-two">Premium Quality</h4>
+              <p class="card-text color-text-2">
+                It is a long established fact that a reader will be by the
+                readable content of a page looking at its layout.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card feature-card py-4 px-4 border-0 border-8px">
+            <img
+              src="./public/images/fresh-food.svg"
+              class="card-img-top feature-card-img mt-2"
+              alt="..."
+            />
+            <div class="card-body text-start px-0 pb-0">
+              <h4 class="card-title font-lobster-two">Always Fresh</h4>
+              <p class="card-text color-text-2">
+                It is a long established fact that a reader will be by the
+                readable content of a page looking at its layout.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card feature-card py-4 px-4 border-0 border-8px">
+            <img
+              src="./public/images/variety-food.svg"
+              class="card-img-top feature-card-img mt-2"
+              alt="..."
+            />
+            <div class="card-body text-start px-0 pb-0">
+              <h4 class="card-title font-lobster-two">Variety Of Food</h4>
+              <p class="card-text color-text-2">
+                It is a long established fact that a reader will be by the
+                readable content of a page looking at its layout.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card feature-card py-4 px-4 border-0 border-8px">
+            <img
+              src="./public/images/delivery.svg"
+              class="card-img-top feature-card-img mt-2"
+              alt="..."
+            />
+            <div class="card-body text-start px-0 pb-0">
+              <h4 class="card-title font-lobster-two">Fastest Delivery</h4>
+              <p class="card-text color-text-2">
+                It is a long established fact that a reader will be by the
+                readable content of a page looking at its layout.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .features {
+    position: relative;
+    background: #080808;
+    overflow: hidden;
+  }
+
+  .features::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -80;
+    width: 500px;
+    height: 500px;
+    background-image: url("./public/images/03.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .features::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -90px;
+    width: 500px;
+    height: 500px;
+    background-image: url("./public/images/05.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+  }
+
+  .feature-title {
+    font-size: 2.5rem;
+  }
+
+  .feature-card {
+    position: relative;
+    background: #101010;
+    transition: linear 0.3s;
+    z-index: 1;
+  }
+
+  .feature-card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: var(--color-primary);
+    transition: linear 0.3s;
+  }
+
+  .feature-card-img {
+    width: 60px;
+  }
+
+  .feature-card:hover {
+    transform: translateY(-8px);
+  }
+
+  .feature-card:hover::after {
+    width: 100%;
+  }
+</style>
