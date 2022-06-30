@@ -1,0 +1,64 @@
+<head>
+  <link rel="stylesheet" href="./public/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./public/css/styles.css" />
+  <!-- <link rel="stylesheet" href="./public/css/fontawesome.css"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  />
+</head>
+
+<div class="video">
+  <div class="container">
+    <div class="text-center">
+      <a
+        href="#"
+        class="d-inline-flex rounded-circle bg-primary-2 text-white video-play-btn"
+      >
+        <i class="fa-solid fa-play icon"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+<style>
+  .video {
+    position: relative;
+    padding: 160px 0;
+    background-image: url('/public/images/020.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+  }
+
+  .video::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+  }
+
+  .video-play-btn {
+    width: 75px;
+    height: 75px;
+    text-decoration: none;
+    animation: video-btn-animation 1s linear infinite;
+  }
+
+  .video-play-btn .icon {
+    margin: auto;
+    font-size: 1.4rem;
+  }
+
+  @keyframes video-btn-animation {
+    0% {
+      box-shadow: 0px 0px 0px 0px rgba(192, 20, 39, 0.7);
+    }
+    100% {
+      box-shadow: 0px 0px 0px 16px rgba(192, 20, 39, 0.05);
+    }
+  }
+</style>

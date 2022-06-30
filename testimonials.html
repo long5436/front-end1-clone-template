@@ -1,0 +1,189 @@
+<head>
+  <link rel="stylesheet" href="./public/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./public/css/styles.css" />
+  <!-- <link rel="stylesheet" href="./public/css/fontawesome.css"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  />
+</head>
+
+<div class="testimonials py-5 position-relative">
+  <div class="container">
+    <div class="text-center py-5">
+      <p class="fs-2 font-parisienne fw-bold color-primary-2">Testimonials</p>
+      <h2 class="fs-1 font-lobster-two fw-bold">What Client Say's</h2>
+      <div class="row py-5">
+        <div class="col-md-6 col-12">
+          <div class="text-start">
+            <div
+              class="position-relative bg-orange-2 border-10px text-white px-4 py-5 testimonials-card"
+            >
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum, you need to be sure there isn't anything embarrassing
+              hidden in the middle of text.
+              <img
+                class="img-fluid testimonials-card-img"
+                src="./public/images/quote.svg"
+                alt=""
+              />
+            </div>
+            <div class="testimonials-content d-flex align-items-center">
+              <div class="testimonials-avt">
+                <img
+                  class="img-fluid"
+                  src="./public/images/01 (1).jpg"
+                  alt=""
+                />
+              </div>
+              <div class="ps-4">
+                <h5 class="font-lobster-two fw-bold mb-0">Sylvia H Green</h5>
+                <p class="color-primary-2 mb-0 py-1">Customer</p>
+                <div class="color-yellow-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-12">
+          <div class="text-start d-md-block d-none">
+            <div
+              class="position-relative bg-orange-2 border-10px text-white px-4 py-5 testimonials-card"
+            >
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum, you need to be sure there isn't anything embarrassing
+              hidden in the middle of text.
+              <img
+                class="img-fluid testimonials-card-img"
+                src="./public/images/quote.svg"
+                alt=""
+              />
+            </div>
+            <div class="testimonials-content d-flex align-items-center">
+              <div class="testimonials-avt">
+                <img
+                  class="img-fluid"
+                  src="./public/images/02 (1).jpg"
+                  alt=""
+                />
+              </div>
+              <div class="ps-4">
+                <h5 class="font-lobster-two fw-bold mb-0">Gordon D Novak</h5>
+                <p class="color-primary-2 mb-0 py-1">Customer</p>
+                <div class="color-yellow-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonials-page text-center">
+        <span class="testimonials-page-active"></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .testimonials {
+    background: #f1f1f1;
+    z-index: -1;
+  }
+
+  .testimonials:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -80px;
+    width: 500px;
+    height: 500px;
+    background-image: url(/public/images/06.png);
+    opacity: 0.1;
+    /* z-index: 2; */
+  }
+
+  .testimonials::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    right: -80px;
+    width: 500px;
+    height: 500px;
+    background-image: url(/public/images/08.png);
+    opacity: 0.1;
+    z-index: -1;
+  }
+
+  .testimonials-card::before {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 40px;
+    width: 45px;
+    height: 45px;
+    background: #000;
+    transform: rotate(45deg);
+    border-radius: 4px;
+    /* z-index: 1; */
+    background: var(--color-orange);
+  }
+
+  .testimonials-card-img {
+    position: absolute;
+    /* z-index: 1; */
+    width: 150px;
+    height: 150px;
+    bottom: 0;
+    right: 20px;
+    opacity: 0.2;
+  }
+
+  .testimonials-content {
+    padding-top: 30px;
+    padding-left: 20px;
+  }
+
+  .testimonials-avt {
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    border: 2px dashed var(--color-orange);
+    border-radius: 50%;
+  }
+
+  .testimonials-avt img {
+    border-radius: 50%;
+  }
+
+  .testimonials-page > span {
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    background: var(--color-yellow);
+    border-radius: 7px;
+    margin: 0 3px;
+  }
+
+  .testimonials-page > span.testimonials-page-active {
+    width: 25px;
+    height: 7px;
+  }
+</style>

@@ -1,0 +1,180 @@
+<head>
+  <link rel="stylesheet" href="./public/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./public/css/styles.css" />
+  <!-- <link rel="stylesheet" href="./public/css/fontawesome.css"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  />
+</head>
+
+<div class="py-5 work position-relative">
+  <div class="container">
+    <div class="text-center py-5">
+      <p class="font-parisienne color-primary-2 fs-2 fw-bold">How It Work</p>
+      <h2 class="font-lobster-two fw-bold fs-1">4 Easy Steps To Enjoy</h2>
+      <div class="row py-5">
+        <div class="col-lg-3 col-md-6 col-12">
+          <div
+            class="work-card position-relative d-flex flex-column align-items-center"
+          >
+            <div
+              class="work-image border border-3 rounded-circle border-orange d-flex position-relative"
+            >
+              <img
+                class="img-fluid m-auto"
+                src="./public/images/fast-food.svg"
+                alt=""
+              />
+              <span
+                class="fw-bold fs-7 position-absolute bg-orange-2 text-white work-badge"
+              >
+                01
+              </span>
+            </div>
+            <div class="pt-3">
+              <h4 class="font-lobster-two fw-bold">Select Your Food</h4>
+              <p class="color-text-2 lh-1-8">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page.
+              </p>
+            </div>
+            <span class="work-card-dash d-lg-block d-none"></span>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div
+            class="work-card position-relative d-flex flex-column align-items-center"
+          >
+            <div
+              class="work-image border border-3 rounded-circle border-orange d-flex position-relative"
+            >
+              <img
+                class="img-fluid m-auto"
+                src="./public/images/cart.svg"
+                alt=""
+              />
+              <span
+                class="fw-bold fs-7 position-absolute bg-orange-2 text-white work-badge"
+              >
+                02
+              </span>
+            </div>
+            <div class="pt-3">
+              <h4 class="font-lobster-two fw-bold">Add To Your Cart</h4>
+              <p class="color-text-2 lh-1-8">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page.
+              </p>
+            </div>
+            <span class="work-card-dash d-lg-block d-none"></span>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div
+            class="work-card position-relative d-flex flex-column align-items-center"
+          >
+            <div
+              class="work-image border border-3 rounded-circle border-orange d-flex position-relative"
+            >
+              <img
+                class="img-fluid m-auto"
+                src="./public/images/payment.svg"
+                alt=""
+              />
+              <span
+                class="fw-bold fs-7 position-absolute bg-orange-2 text-white work-badge"
+              >
+                03
+              </span>
+            </div>
+            <div class="pt-3">
+              <h4 class="font-lobster-two fw-bold">Complete Your Payment</h4>
+              <p class="color-text-2 lh-1-8">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page.
+              </p>
+            </div>
+            <span class="work-card-dash d-lg-block d-none"></span>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div
+            class="work-card position-relative d-flex flex-column align-items-center"
+          >
+            <div
+              class="work-image border border-3 rounded-circle border-orange d-flex position-relative"
+            >
+              <img
+                class="img-fluid m-auto"
+                src="./public/images/pickup.svg"
+                alt=""
+              />
+              <span
+                class="fw-bold fs-7 position-absolute bg-orange-2 text-white work-badge"
+              >
+                04
+              </span>
+            </div>
+            <div class="pt-3">
+              <h4 class="font-lobster-two fw-bold">Pickup Or Delivery</h4>
+              <p class="color-text-2 lh-1-8">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .work::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -80px;
+    background-image: url(/public/images/04.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+    z-index: -1;
+    opacity: 0.1;
+  }
+
+  .work-card-dash::after {
+    content: '';
+    position: absolute;
+    border-bottom: 2px dashed #fb7223;
+    width: 110px;
+    height: 2px;
+    left: 83%;
+    top: 50px;
+    /* transform: translateX(-50%); */
+  }
+
+  .work-image {
+    box-shadow: 0 3px 24px rgb(0 0 0 / 10%);
+    /* background: #000; */
+    width: 100px;
+    height: 100px;
+  }
+
+  .work-image > img {
+    height: 50px;
+    height: 50px;
+  }
+
+  .work-badge {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    left: -3px;
+    top: -13px;
+    border-radius: 33% 66% 70% 30%/49% 62% 38% 51%;
+  }
+</style>
