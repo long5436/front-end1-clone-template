@@ -459,7 +459,7 @@ body {
 .video {
   position: relative;
   padding: 200px 0;
-  background-image: url('/public/images/020.jpg');
+  background-image: url('../images/020.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
@@ -523,7 +523,7 @@ body {
 /*  */
 
 .deal-banner {
-  background-image: url(/public/images/027.jpg);
+  background-image: url(../images/027.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
@@ -545,7 +545,7 @@ body {
   position: absolute;
   top: 0;
   left: -80px;
-  background-image: url(/public/images/04.png);
+  background-image: url(../images/04.png);
   background-size: cover;
   background-repeat: no-repeat;
   width: 500px;
@@ -611,7 +611,7 @@ body {
   left: -80px;
   width: 500px;
   height: 500px;
-  background-image: url(/public/images/06.png);
+  background-image: url(../images/06.png);
   opacity: 0.1;
   /* z-index: 2; */
 }
@@ -623,7 +623,7 @@ body {
   right: -80px;
   width: 500px;
   height: 500px;
-  background-image: url(/public/images/08.png);
+  background-image: url(../images/08.png);
   opacity: 0.1;
   z-index: -1;
 }
