@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&family=Parisienne&family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+  --color-primary: #c00a27;
+  --color-orange: #fb7223;
+  --color-yellow: rgb(246, 147, 35);
+  --color-text: #757f95;
+}
+
+/* class chung */
+
+.bg-primary-2 {
+  background: var(--color-primary);
+}
+
+.bg-orange-2 {
+  background: var(--color-orange);
+}
+
+.bg-yellow-2 {
+  background: var(--color-yellow);
+}
+
+.bg-overlay {
+  position: relative;
+}
+
+.bg-overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+.bg-overlay-2 {
+  position: relative;
+}
+
+.bg-overlay-2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+.color-primary-2 {
+  color: var(--color-primary);
+}
+
+.color-orange-2 {
+  color: var(--color-orange) !important;
+}
+
+.color-yellow-2 {
+  color: var(--color-yellow) !important;
+}
+
+.color-text-2 {
+  color: var(--color-text);
+}
+
+.border-orange {
+  border-color: var(--color-orange) !important;
+}
+
+.border-primary-2 {
+  border-color: var(--color-primary) !important;
+}
+
+.border-dashed {
+  border-style: dashed !important;
+}
+
+.border-10px {
+  border-radius: 10px;
+}
+
+.border-8px {
+  border-radius: 8px;
+}
+
+.border-white-10 {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.ms-6 {
+  margin-left: 5rem !important;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+.font-parisienne {
+  font-family: 'Parisienne', cursive;
+}
+
+.font-lobster-two {
+  font-family: 'Lobster Two', cursive;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fs-7 {
+  font-size: 0.8rem;
+}
+
+.lh-1-8 {
+  line-height: 1.8;
+}
+
+.flex-1 {
+  flex: 1;
+}
